@@ -1,0 +1,23 @@
+{
+  "badges": {
+    "name": "vscode-run-command-on-file-change",
+    "github": "TheRealSyler",
+    "repo": "vscode-run-command-on-file-change",
+    "out": "README.md",
+    "vscode": "syler.vscode-run-command-on-file-change",
+    "badges": [
+      "vscV vscode",
+      "vscD vscode",
+      "vscI vscode",
+      "githubLastCommit github",
+      "githubIssues github ?color=lightgrey"
+    ]
+  },
+  "license": {
+    "name": "Leonard Grosoli",
+    "type": "mit",
+    "year": "2020",
+    "out": "README.md",
+    "file": "LICENSE"
+  }
+}

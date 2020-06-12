@@ -1,0 +1,59 @@
+{
+  "name": "vscode-run-command-on-file-change",
+  "displayName": "Run VsCode Command on file change.",
+  "description": "Run VsCode Command on file change.",
+  "version": "0.0.1",
+  "preview": false,
+  "icon": "logo.png",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "suf && yarn build",
+    "build": "yarn build:extension",
+    "build:extension": "del ./dist && webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "publisher": "syler",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Run VsCode Command on file change.",
+      "properties": {
+        "cofc.commands": {
+          "type": "array",
+          "description": "Array of command that get run when the matching file or directory gets changed. `{path: 'AbsoluteFileOrDirectoryPath', cmd: 'vscodeCommand'}`"
+        }
+      }
+    }
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "url": "https://github.com/TheRealSyler/vscode-run-command-on-file-change",
+    "type": "git"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.44.0",
+    "@types/webpack": "^4.41.10",
+    "del-cli": "^3.0.0",
+    "suf-cli": "^1.0.1",
+    "suf-node": "^1.1.1",
+    "ts-loader": "^7.0.2",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0",
+    "webpack": "^4.42.1",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "chokidar": "^3.4.0"
+  }
+}

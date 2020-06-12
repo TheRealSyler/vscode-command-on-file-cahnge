@@ -2,8 +2,7 @@
   "name": "vscode-run-command-on-file-change",
   "displayName": "Run VsCode Command on file change.",
   "description": "Run VsCode Command on file change.",
-  "version": "0.0.1",
-  "preview": false,
+  "version": "0.0.2",
   "icon": "logo.png",
   "main": "./dist/extension.js",
   "scripts": {

@@ -2,7 +2,7 @@
   "badges": {
     "name": "vscode-run-command-on-file-change",
     "github": "TheRealSyler",
-    "repo": "vscode-command-on-file-change",
+    "repo": "vscode-run-command-on-file-change",
     "out": "README.md",
     "vscode": "syler.vscode-run-command-on-file-change",
     "badges": [
